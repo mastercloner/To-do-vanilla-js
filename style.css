@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=PT+Sans&family=Paytone+One&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px;
+}
+.container-box{
+    width: 100%;
+    max-width: 540px;
+    background-color: #fff;
+    margin: 100px auto;
+    padding: 40px 30px 40px;
+    border-radius: 10px;
+    box-shadow: rgba(189, 189, 189, 0.3) 0px 7px 29px 0px;
+}
+.container-box h2{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 3rem;
+}
+.row{
+    width: 100%;
+    background-color: #ccc;
+    height: 50px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    width: 60%;
+    margin: 10px 20px 0px;
+    padding: 15px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+input::placeholder{
+    color: #0f0c29;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+button{
+    width: 100px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #302b63;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    width: 100%;
+    padding: 10px 5px 5px;
+    position: relative;
+    cursor: pointer;
+}
+ul li::before{
+    content: "\2713";
+    position: absolute;
+    left: -20px;
+    display: none;
+}
+ul li.checked{
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    display: block;
+}
+ul li span{
+    font-size: 30px;
+    position: absolute;
+    right: 0;
+}
